@@ -9,4 +9,6 @@ def home():
     return render_template('index.html', date=today_date)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+     # Отримуємо порт із змінної середовища, або використовуємо 5000 за замовчуванням
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
