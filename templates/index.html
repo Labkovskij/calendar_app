@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #6dd5ed, #2193b0), 
+                        url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed; 
+            background-size: cover; /* Зображення фону покриває весь екран */
+            color: #fff; /* Білий текст для кращого контрасту */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #ffffff;
+        }
+        .date {
+            font-weight: bold;
+            font-size: 1.8em;
+            color: #ffcc00; /* Жовтий колір для дати */
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.8em;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Flask App!</h1>
+    <p>Today's date is: <span class="date">{{ date }}</span></p>
+    <footer>
+        &copy; 2024 Labkovckyi com
+    </footer>
+</body>
+</html>
