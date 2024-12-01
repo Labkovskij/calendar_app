@@ -1,5 +1,6 @@
 from flask import Flask, render_template 
 from datetime import date
+import os # додали цей імпорт для рендер
 
 app = Flask(__name__)
 
